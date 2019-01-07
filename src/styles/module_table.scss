@@ -1,0 +1,235 @@
+@charset "utf-8";
+.modelsTree {
+    background: #FFFFFF;
+    .modelsTree p {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 20px 0;
+        text-indent: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px dotted #EEEEEE;
+    }
+}
+
+.dialogSee {
+    padding: 10px;
+    .dialogForm {
+        background: #F8F8F8;
+        padding: 10px;
+        .el-form-item {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.dialog_set {
+    .el-dialog__body {
+        max-height: 500px;
+        overflow-y: auto;
+    }
+    .el-table__body-wrapper{
+       max-height: 530px;
+        overflow-y: auto; 
+    }
+}
+
+.companyManager .el-upload {
+    width: 100%;
+}
+
+.companyManager .el-upload-dragger {
+    width: 100%;
+}
+
+.el-table {
+    margin-bottom: 15px;
+    .del {
+        background: #FF7256;
+    }
+    .cell {
+        line-height: 20px;
+    }
+    & th,
+    & td {
+        height: auto;
+    }
+    tr {
+        th {
+            .cell {
+                padding: 8px 16px;
+            }
+            &:first-child {
+                .cell {
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+        }
+        td {
+            padding: 0;
+            .cell {
+                padding: 8px 16px;
+            }
+            &:first-child {
+                .cell {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.table-pagination {
+    text-align: right;
+    >.el-select {
+        width: 100px;
+        .el-input__inner {
+            height: 28px;
+            border-color: #d1dbe5;
+        }
+    }
+    .el-pagination {
+        display: inline-block;
+        padding: 0;
+        float: right;
+    }
+}
+
+//车企和品牌logo图片上传css
+.comLogoUpload .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    padding: 30px 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.comLogoUpload .el-upload:hover {
+    border-color: #20a0ff;
+}
+
+.avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.imgLogo {
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+//下拉列表修改
+.el-dropdown-menu {
+    border-radius: 5px;
+    text-align: center;
+}
+
+.el-message-box__wrapper {
+    z-index: 10001 !important;
+}
+
+.el-dialog__title,
+.el-message-box__title {
+    border-left: 4px solid #1991EB;
+    padding-left: 7px;
+}
+
+.el-dialog__headerbtn,
+.el-message-box__headerbtn {
+    font-size: 16px;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.el-dialog__headerbtn:focus .el-dialog__close,
+.el-message-box__headerbtn:focus .el-message-box__close,
+.el-dialog__headerbtn:hover .el-dialog__close,
+.el-message-box__headerbtn:hover .el-message-box__close {
+    -webkit-transform: rotate(360deg);
+    animation: rotation 3s linear infinite;
+    -moz-animation: rotation 3s linear infinite;
+    -webkit-animation: rotation 3s linear infinite;
+    -o-animation: rotation 3s linear infinite;
+}
+
+.el-dialog__footer,
+.el-message-box__btns {
+    text-align: center;
+}
+
+//table为空时的背景
+.el-table__empty-block {
+    background: url(../images/ImportedLayers.png) center center no-repeat;
+    padding: 100px 0;
+    .el-table__empty-text {
+        top: 77%;
+    }
+}
+
+//单选框样式
+.el-radio__inner {
+    background: transparent;
+    width: 14px;
+    height: 14px;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+    background: transparent;
+}
+
+.el-radio__inner::after {
+    width: 10px;
+    height: 10px;
+    background: #1991EB;
+}
+
+.bgLogin {
+    width: 100%;
+    height: 100%;
+    padding: 1px 0;
+    background: url(../images/loginbg.jpg) center center no-repeat;
+    background-size: cover;
+    .loginLogo {
+        margin-top: 110px;
+        text-align: center;
+    }
+    .loginTitle {
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .login-container {
+        background-clip: padding-box;
+        margin: 60px auto;
+        width: 460px;
+        padding: 50px 40px 15px 40px;
+        background: #fff;
+        border: 1px solid #eaeaea;
+        box-shadow: 0 0 10px #eeeeee;
+        border-radius: 5px;
+        .title {
+            margin: 0px auto 40px auto;
+            text-align: center;
+            color: #505458;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .remember {
+            margin: 0px 0px 35px 0px;
+        }
+    }
+}
